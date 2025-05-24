@@ -1,5 +1,6 @@
 package com.example.reposteria_am.Vendedor
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -57,6 +58,16 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
         replaceFragment(FragmentInicioV())
         binding.NavigationView.setCheckedItem(R.id.op_inicio_v)
 
+    }
+
+    private fun comprobarSesion() {
+        /*Si el usuario no ha iniciado sesion*/
+        if(firebaseAuth!!.currentUser==null){
+            startActivity(Intent(applicationContext,RegistroVendedorActivity::class.java))
+            Toast.makeText(applicationContext,"Vendedor no logeado",Toast.LENGTH_SHORT).show()
+        }else{
+            Toast.makeText(applicationContext,"Usuario en linea",Toast.LENGTH_SHORT).show()
+        }
     }
 
 
