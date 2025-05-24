@@ -4,13 +4,25 @@
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
 
+    <!--NavigationDrawer Vendedor-->
     <string name="op_inicio_v">Inicio</string>
     <string name="op_mi_tienda_v">Mi tienda</string>
     <string name="op_resenia_v">Reseñas</string>
     <string name="op_cerrar_sesion_v">Cerrar</string>
 
+    <!--NavigationDrawer Cliente-->
+    <string name="op_inicio_c">Inicio</string>
+    <string name="op_mi_perfil_c">Mi perfil</string>
+    <string name="op_cerrar_sesion_c">Cerrar</string>
+
+    <!--NavigationDrawer Bar Vendedor-->
     <string name="op_mis_productos_v">Mis productos</string>
     <string name="op_mis_ordenes_v">Ordenes</string>
+
+    <!--Bottom Navigation Bar Cliente-->
+    <string name="op_tienda_c">Tienda</string>
+    <string name="op_mis_ordenes_c">Mis ordenes</string>
+
 
     <string name="txt_bienvenida">Bienvenido(a)</string>
 

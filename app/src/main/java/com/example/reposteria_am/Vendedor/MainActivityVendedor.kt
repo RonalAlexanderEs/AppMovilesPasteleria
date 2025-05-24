@@ -18,7 +18,6 @@ import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.Fragment
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentInicioV
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentMiTiendaV
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentReseniasV
-import com.example.reposteria_am.databinding.ActivityMainBinding
 import com.example.reposteria_am.databinding.ActivityMainVendedorBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.Firebase
