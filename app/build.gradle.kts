@@ -40,12 +40,13 @@ android {
 }
 
 dependencies {
-    implementation(libs.lottie)
+    implementation(libs.lottie) /*animaciones*/
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebaseAuth) /*Autenticacion con firebase*/
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

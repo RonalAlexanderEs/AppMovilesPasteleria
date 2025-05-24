@@ -20,10 +20,15 @@ import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentResenia
 import com.example.reposteria_am.databinding.ActivityMainBinding
 import com.example.reposteria_am.databinding.ActivityMainVendedorBinding
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.Firebase
+
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainVendedorBinding
+    private var firebaseAuth : FirebaseAuth?=null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +37,9 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        firebaseAuth = FirebaseAuth.getInstance()
+        comprobarSesion()
 
         binding.NavigationView.setNavigationItemSelectedListener(this)
 
@@ -50,6 +58,7 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
         binding.NavigationView.setCheckedItem(R.id.op_inicio_v)
 
     }
+
 
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager
