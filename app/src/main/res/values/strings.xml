@@ -21,6 +21,12 @@
     <string name="etPassword">Password</string>
     <string name="etCPassword">Confirmar password</string>
     <string name="btnRegistrarV">Registrarme</string>
+
+    <!-- LOGIN VENDEDOR -->
+    <string name="txtloginV">Login de vendedor</string>
+    <string name="btnLoginV">Ingresar</string>
+    <string name="txtnoCuenta">¿No tienes una cuenta?</string>
+    <string name="tvRegistrarV">Regístrarme</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
