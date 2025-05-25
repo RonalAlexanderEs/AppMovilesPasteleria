@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +8,99 @@
     android:layout_height="match_parent"
     tools:context=".Cliente.RegistroClienteActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- Título -->
+        <TextView
+
+            android:text="@string/txtRegistroC"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <!-- Imagen de cliente -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icousuario"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <!-- Nombres completos -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etNombresC"
+                android:hint="@string/etNombresC"
+                android:inputType="textPersonName|textCapWords"
+                android:drawableStart="@drawable/ico_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etMail"
+                android:hint="@string/etEmail"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ico_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:hint="@string/etPassword"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ico_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Confirmar Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etCPassword"
+                android:hint="@string/etCPassword"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ico_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón registrar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistrarC"
+            android:text="@string/btnRegistrarV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cornerRadius="6dp"
+            android:textAllCaps="true"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

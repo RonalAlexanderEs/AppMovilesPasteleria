@@ -54,7 +54,7 @@
 
             <EditText
                 android:id="@+id/etMailV"
-                android:hint="@string/etEmailV"
+                android:hint="@string/etEmail"
                 android:drawableStart="@drawable/ico_email"
                 android:drawablePadding="5dp"
                 android:inputType="textEmailAddress"
