@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.reposteria_am.R
+import com.example.reposteria_am.SeleccionarTipoActivity
 import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentInicioV
@@ -61,7 +62,7 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
 
     private fun cerrarSesion(){
         firebaseAuth!!.signOut()
-        startActivity(Intent(applicationContext , LoginVendedorActivity::class.java))
+        startActivity(Intent(applicationContext , SeleccionarTipoActivity::class.java))
         finish()
         Toast.makeText(applicationContext, "Has cerrado sesion",Toast.LENGTH_SHORT).show()
     }
@@ -69,7 +70,7 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
     private fun comprobarSesion() {
         /*Si el usuario no ha iniciado sesion*/
         if(firebaseAuth!!.currentUser==null){
-            startActivity(Intent(applicationContext,LoginVendedorActivity::class.java))
+            startActivity(Intent(applicationContext,SeleccionarTipoActivity::class.java))
             Toast.makeText(applicationContext,"Vendedor no logeado",Toast.LENGTH_SHORT).show()
         }else{
             Toast.makeText(applicationContext,"Usuario en linea",Toast.LENGTH_SHORT).show()

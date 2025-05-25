@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".SeleccionarTipoActivity"
+    android:background="@color/white">
+
+    <!-- Imagen principal (Chef) -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgChef"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/chef"
+        android:contentDescription="@string/tipoVendedor"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Vendedor -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tipoVendedor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tipoVendedor"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        android:layout_marginTop="16dp"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/imgChef"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Imagen cliente/logo -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCliente"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/tipoCliente"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tipoVendedor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Cliente -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tipoCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tipoCliente"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        android:layout_marginTop="16dp"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/imgCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
