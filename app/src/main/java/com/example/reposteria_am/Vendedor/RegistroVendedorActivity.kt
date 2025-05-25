@@ -99,14 +99,14 @@ class RegistroVendedorActivity : AppCompatActivity() {
         val uidBD = firebaseAuth.uid
         val nombreBD = nombres
         val emailBD = email
-        val tipoUsuario = "vendedor"
         val tiempoBD = Constantes().obtenerTiempoD()
 
         val datosVendedor = HashMap<String ,Any>()
 
         datosVendedor["uid"]= "$uidBD"
+        datosVendedor["email"]= "$emailBD"
         datosVendedor["nombres"]= "$nombreBD"
-        datosVendedor["tiempoUsuario"]= "vendedor"
+        datosVendedor["tipoUsuario"]= "vendedor"
         datosVendedor["tiempo_registro"]= tiempoBD
 
         val reference=FirebaseDatabase.getInstance().getReference("Usuarios")
