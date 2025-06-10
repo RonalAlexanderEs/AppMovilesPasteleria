@@ -1,6 +1,7 @@
 package com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import android.widget.Toast
 import com.example.reposteria_am.R
 import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
+import com.example.reposteria_am.Vendedor.Productos.AgregarProductoActivity
 import com.example.reposteria_am.databinding.FragmentInicioVBinding
 
 
@@ -46,13 +48,7 @@ class FragmentInicioV : Fragment() {
         binding.bottomNavigation.selectedItemId= R.id.op_mis_productos_v
 
         binding.addFab.setOnClickListener{
-
-            Toast.makeText(
-                mContext,
-                "Has presionado en boton flotante",
-                Toast.LENGTH_SHORT
-            ).show()
-
+            startActivity(Intent(context,AgregarProductoActivity::class.java))
         }
 
         return binding.root

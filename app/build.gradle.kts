@@ -40,7 +40,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.firebaseDatabase)/*Base de datos con Firebase*/
+    implementation(libs.glide) /*Leer imagenes*/
+    implementation(libs.imagePicker) /*R*/
+    implementation(libs.firebaseDatabase) /*Base de datos con Firebase*/
     implementation(libs.lottie) /*animaciones*/
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

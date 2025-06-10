@@ -48,14 +48,24 @@
     <string name="txtnoCuenta">¿No tienes una cuenta?</string>
     <string name="tvRegistrarV">Regístrarme</string>
 
-    <!-- LOGIN VENDEDOR -->
+    <!-- LOGIN CLIENTE -->
     <string name="txtLoginC">Login de cliente</string>
     <string name="btnLoginC">Ingresar</string>
     <string name="tvRegistrarC">Registrarme</string>
     <string name="txtNoCuenta">¿No tienes una cuenta?</string>
 
+    <!-- Productos -->
+    <string name="txtAgregarProductos">Agregar productos</string>
+    <string name="etNombresP">Nombre del producto</string>
+    <string name="etDescripcionP">Descripción</string>
+    <string name="Categoria">Categoria</string>
+    <string name="etPrecioP">Precio</string>
+    <string name="txtDescuento">Descuento</string>
+    <string name="etPrecioConDescuentoP">Precio con descuento apli.</string>
+    <string name="etNotaDescuentoP">Ejm: 10% Desc.</string>
+    <string name="btnAgregarProducto">Agregar producto</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

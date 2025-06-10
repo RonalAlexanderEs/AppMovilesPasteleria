@@ -71,12 +71,12 @@
 
             <EditText
                 android:id="@+id/etPassword"
-                android:hint="@string/etPassword"
-                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ico_password"
                 android:drawablePadding="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:hint="@string/etPassword"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Confirmar password -->
