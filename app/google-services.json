@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "847687867021",
+    "firebase_url": "https://tienda-virtual-d11c9-default-rtdb.firebaseio.com",
+    "project_id": "tienda-virtual-d11c9",
+    "storage_bucket": "tienda-virtual-d11c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847687867021:android:0e3f4a886632d92b00e0c4",
+        "android_client_info": {
+          "package_name": "com.example.reposteria_am"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMmJj9LzgZMVHaRAQ41esDgmUKBxnsa1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
