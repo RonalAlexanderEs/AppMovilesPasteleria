@@ -16,6 +16,7 @@ import com.example.reposteria_am.R
 import com.example.reposteria_am.SeleccionarTipoActivity
 import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.reposteria_am.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
+import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentCategoriasV
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentInicioV
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentMiTiendaV
 import com.example.reposteria_am.Vendedor.Nav_Fragments_Vendedor.FragmentReseniasV
@@ -92,6 +93,9 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
             }
             R.id.op_mi_tienda_v->{
                 replaceFragment(FragmentMiTiendaV())
+            }
+            R.id.op_categorias_v->{
+                replaceFragment(FragmentCategoriasV())
             }
             R.id.op_resenia_v->{
                 replaceFragment(FragmentReseniasV())
